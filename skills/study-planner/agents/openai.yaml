@@ -1,0 +1,4 @@
+interface:
+  display_name: "Навчальний планувальник"
+  short_description: "Роботи, захисти й реалістичні плани у Notion"
+  default_prompt: "Використай $study-planner: прочитай актуальні дані з Notion і переглянь мій план на тиждень."

@@ -1,0 +1,15 @@
+# Setup and reuse
+
+1. Confirm Notion connection and approved destination; absent destination create a private draft hub. Reuse existing configured hub. Read Notion Markdown/view DSL before creating content. Never redesign unrelated workspace areas.
+2. Create/fetch the four databases in schema.md: courses and plans first, work with relations next, opportunities last. Add work self-relation after its data source exists. Tool schemas are authoritative; fetch data sources before writing records/views. Creation of schemas is already authorized for this project; don't ask again.
+3. Main hub uses a compact summary and two-column overview, then current plan gallery, current focus table, ready list, deadlines and next-week opportunities. Use native linked views, restrained emojis and color-coded states. Hide advanced technical fields from everyday views. Keep settings/history below main work; don't require paid charts.
+4. Current focus stores ISO Monday in `Тиждень фокусу` and Sunday in `Кінець фокусу`. Filter start <= "today" AND end >= "today" plus not archived/not credited. Plan cards similarly use `Тиждень` and `Кінець тижня`. The live connector silently dropped a boolean-formula filter; use date fields and inspect returned filters. Relative last-seven-days filters alone can show last week on Monday.
+5. Configure ordinary work tables/board, course gallery, deadlines calendar and opportunity calendar. Missing actual records should produce empty native views, not fake data or repeated onboarding text. A dedicated test course and rows must be clearly labeled and archived after testing; scope cleanup to those exact IDs.
+6. Settings page: semester boundaries and weekly hours remain unset until user provides them. Default reserve 20% is labeled adjustable. Record verified group and source, not guessed semester dates from the site's default export range.
+7. Save ID mapping in private project config (ignored by Git). Keep reusable skill files free of user/workspace IDs. A new student copies the skill and duplicates or creates their own Notion hub, then rebinds IDs and university adapter. No multi-user service is introduced.
+8. Smoke-test course/task relations, lifecycle, plan fields, opportunity cancellation and query/readback with disposable labeled records. Separately evaluate seven planning scenarios in references/evaluation.md; instruction validation alone does not prove reasoning behavior. Report exact verification boundaries.
+
+The optional generic notion-setup onboarding may ask about shared memory. Don't let this expand study planning into saving unrelated history or skills without the user's choice. Study settings and a local Codex skill are sufficient for the planner itself. No daily job is created without a specific schedule approval.
+
+## Distributing or restoring a clean copy
+Read [template.md](template.md) and use assets/notion-template.json. Optional course/work seed is assets/coursework-example.json. This is a structured recreation blueprint, not a full-fidelity CSV import. Prefer the checked clean native copy for convenient duplication once sharing is explicitly enabled.

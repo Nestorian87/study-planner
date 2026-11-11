@@ -1,0 +1,483 @@
+{
+  "version": 2,
+  "schemas": {
+    "courses": {
+      "title": "Предмети",
+      "fields": [
+        {
+          "name": "CIST ID викладачів",
+          "type": "text"
+        },
+        {
+          "name": "CIST назви",
+          "type": "text"
+        },
+        {
+          "name": "Архів",
+          "type": "checkbox"
+        },
+        {
+          "name": "Ваші зусилля",
+          "type": "select",
+          "options": [
+            {
+              "name": "Невідомо",
+              "color": "gray"
+            },
+            {
+              "name": "Мінімальні",
+              "color": "green"
+            },
+            {
+              "name": "Помірні",
+              "color": "yellow"
+            },
+            {
+              "name": "Значні",
+              "color": "orange"
+            }
+          ]
+        },
+        {
+          "name": "Викладачі",
+          "type": "text"
+        },
+        {
+          "name": "Джерело правил",
+          "type": "text"
+        },
+        {
+          "name": "Кінець здачі",
+          "type": "date"
+        },
+        {
+          "name": "Матеріали",
+          "type": "url"
+        },
+        {
+          "name": "Назва",
+          "type": "title"
+        },
+        {
+          "name": "Правила здачі",
+          "type": "text"
+        },
+        {
+          "name": "Примітка до зусиль",
+          "type": "text"
+        },
+        {
+          "name": "Семестр",
+          "type": "text"
+        }
+      ]
+    },
+    "tasks": {
+      "title": "Роботи",
+      "fields": [
+        {
+          "name": "Архів",
+          "type": "checkbox"
+        },
+        {
+          "name": "Бажаний період",
+          "type": "date"
+        },
+        {
+          "name": "Блокування",
+          "type": "text"
+        },
+        {
+          "name": "Дедлайн",
+          "type": "date"
+        },
+        {
+          "name": "Джерело дедлайну",
+          "type": "text"
+        },
+        {
+          "name": "Залежить від",
+          "type": "relation",
+          "target": "tasks"
+        },
+        {
+          "name": "Ключ імпорту",
+          "type": "text"
+        },
+        {
+          "name": "Кінець фокусу",
+          "type": "date"
+        },
+        {
+          "name": "Назва",
+          "type": "title"
+        },
+        {
+          "name": "Напрям",
+          "type": "select",
+          "options": [
+            {
+              "name": "Навчальна дисципліна",
+              "color": "green"
+            },
+            {
+              "name": "Дипломний проєкт",
+              "color": "purple"
+            }
+          ]
+        },
+        {
+          "name": "Наступний крок",
+          "type": "text"
+        },
+        {
+          "name": "Операція",
+          "type": "text"
+        },
+        {
+          "name": "Остання зміна",
+          "type": "last_edited_time"
+        },
+        {
+          "name": "План",
+          "type": "relation",
+          "target": "plans",
+          "reverse": "Роботи"
+        },
+        {
+          "name": "Потрібен захист",
+          "type": "checkbox"
+        },
+        {
+          "name": "Предмет",
+          "type": "relation",
+          "target": "courses",
+          "reverse": "Роботи"
+        },
+        {
+          "name": "Пріоритет",
+          "type": "select",
+          "options": [
+            {
+              "name": "1 · Критично",
+              "color": "red"
+            },
+            {
+              "name": "2 · Важливо",
+              "color": "orange"
+            },
+            {
+              "name": "3 · Поступ",
+              "color": "blue"
+            },
+            {
+              "name": "4 · Можна відкласти",
+              "color": "gray"
+            }
+          ]
+        },
+        {
+          "name": "Стан",
+          "type": "status",
+          "options": [
+            {
+              "name": "Зарахована",
+              "color": "green",
+              "group": "complete"
+            },
+            {
+              "name": "У роботі",
+              "color": "blue",
+              "group": "in_progress"
+            },
+            {
+              "name": "Готова до здачі",
+              "color": "yellow",
+              "group": "in_progress"
+            },
+            {
+              "name": "Здана / захищена",
+              "color": "purple",
+              "group": "in_progress"
+            },
+            {
+              "name": "До виконання",
+              "color": "gray",
+              "group": "to_do"
+            }
+          ]
+        },
+        {
+          "name": "Тиждень фокусу",
+          "type": "date"
+        },
+        {
+          "name": "Тип",
+          "type": "select",
+          "options": [
+            {
+              "name": "Лабораторна",
+              "color": "blue"
+            },
+            {
+              "name": "Практична",
+              "color": "purple"
+            },
+            {
+              "name": "Індивідуальна",
+              "color": "orange"
+            },
+            {
+              "name": "Групова",
+              "color": "pink"
+            },
+            {
+              "name": "Інше",
+              "color": "gray"
+            }
+          ]
+        },
+        {
+          "name": "Учасники й відповідальність",
+          "type": "text"
+        },
+        {
+          "name": "Формат роботи",
+          "type": "select",
+          "options": [
+            {
+              "name": "Індивідуальна",
+              "color": "gray"
+            },
+            {
+              "name": "Групова",
+              "color": "blue"
+            },
+            {
+              "name": "Парна",
+              "color": "purple"
+            }
+          ]
+        },
+        {
+          "name": "Чому зараз",
+          "type": "text"
+        }
+      ]
+    },
+    "opportunities": {
+      "title": "Можливості здачі",
+      "fields": [
+        {
+          "name": "Викладач",
+          "type": "text"
+        },
+        {
+          "name": "Група",
+          "type": "text"
+        },
+        {
+          "name": "Джерело",
+          "type": "text"
+        },
+        {
+          "name": "Ключ CIST",
+          "type": "text"
+        },
+        {
+          "name": "Коли",
+          "type": "date"
+        },
+        {
+          "name": "Назва",
+          "type": "title"
+        },
+        {
+          "name": "Операція",
+          "type": "text"
+        },
+        {
+          "name": "Перевірено",
+          "type": "date"
+        },
+        {
+          "name": "Посилання",
+          "type": "url"
+        },
+        {
+          "name": "Предмет",
+          "type": "relation",
+          "target": "courses"
+        },
+        {
+          "name": "Підтвердження",
+          "type": "select",
+          "options": [
+            {
+              "name": "Кандидат із розкладу",
+              "color": "gray"
+            },
+            {
+              "name": "Допускається правилами",
+              "color": "blue"
+            },
+            {
+              "name": "Підтверджена домовленість",
+              "color": "green"
+            }
+          ]
+        },
+        {
+          "name": "Роботи",
+          "type": "relation",
+          "target": "tasks"
+        },
+        {
+          "name": "Стан",
+          "type": "select",
+          "options": [
+            {
+              "name": "Майбутня",
+              "color": "blue"
+            },
+            {
+              "name": "Скасована",
+              "color": "red"
+            },
+            {
+              "name": "Не відбулася",
+              "color": "orange"
+            },
+            {
+              "name": "Завершена",
+              "color": "gray"
+            }
+          ]
+        },
+        {
+          "name": "Умови",
+          "type": "text"
+        }
+      ]
+    },
+    "plans": {
+      "title": "Тижневі плани",
+      "fields": [
+        {
+          "name": "Доступно год",
+          "type": "number"
+        },
+        {
+          "name": "Заплановано год",
+          "type": "number"
+        },
+        {
+          "name": "Ключ тижня",
+          "type": "text"
+        },
+        {
+          "name": "Кінець тижня",
+          "type": "date"
+        },
+        {
+          "name": "Назва",
+          "type": "title"
+        },
+        {
+          "name": "Оновлено",
+          "type": "date"
+        },
+        {
+          "name": "Операція",
+          "type": "text"
+        },
+        {
+          "name": "Резерв %",
+          "type": "number"
+        },
+        {
+          "name": "Стан",
+          "type": "select",
+          "options": [
+            {
+              "name": "Чернетка",
+              "color": "gray"
+            },
+            {
+              "name": "Актуальний",
+              "color": "green"
+            },
+            {
+              "name": "Потребує перегляду",
+              "color": "orange"
+            },
+            {
+              "name": "Історія",
+              "color": "brown"
+            }
+          ]
+        },
+        {
+          "name": "Тиждень",
+          "type": "date"
+        }
+      ]
+    }
+  },
+  "pages": {
+    "hub": {
+      "title": "Навчання · шаблон",
+      "icon": "🌿",
+      "content": "# Цей тиждень\n\n# Роботи\n\n# Здачі"
+    },
+    "settings": {
+      "title": "Налаштування",
+      "icon": "⚙️",
+      "content": "| Параметр | Значення |\n| --- | --- |\n| Кінець семестру | Не вказано |\n| Доступно годин на тиждень | Не вказано |\n| Резерв | 20% |\n| Група | Не вказано |\n| Часовий пояс | Europe/Kyiv |\n\nЗусилля предмета: невідомо / мінімальні / помірні / значні. Це особиста участь, не години роботи агентів."
+    }
+  },
+  "views": [
+    {
+      "source": "courses",
+      "name": "Предмети",
+      "type": "gallery",
+      "configure": "FILTER \"Архів\" = FALSE; SHOW \"Назва\", \"Ваші зусилля\"; CARD SIZE small"
+    },
+    {
+      "source": "tasks",
+      "name": "Роботи",
+      "type": "table",
+      "configure": "FILTER \"Архів\" = FALSE; GROUP BY \"Предмет\" HIDE EMPTY; SHOW \"Назва\", \"Стан\", \"Формат роботи\", \"Дедлайн\"; QUICK FILTER \"Предмет\", \"Стан\"; WIDTH \"Назва\" 300"
+    },
+    {
+      "source": "tasks",
+      "name": "Фокус тижня",
+      "type": "table",
+      "configure": "FILTER \"Тиждень фокусу\" <= \"today\" AND \"Кінець фокусу\" >= \"today\" AND \"Архів\" = FALSE AND \"Стан\" != \"Зарахована\"; SHOW \"Назва\", \"Стан\", \"Наступний крок\", \"Чому зараз\"; SORT BY \"Пріоритет\" ASC"
+    },
+    {
+      "source": "tasks",
+      "name": "Готове до здачі",
+      "type": "list",
+      "configure": "FILTER \"Стан\" = \"Готова до здачі\" AND \"Архів\" = FALSE; SHOW \"Назва\", \"Предмет\""
+    },
+    {
+      "source": "tasks",
+      "name": "Поступ",
+      "type": "board",
+      "configure": "FILTER \"Архів\" = FALSE; GROUP BY \"Стан\" BY OPTION SHOW EMPTY; SHOW \"Назва\", \"Предмет\"; CARD LAYOUT compact"
+    },
+    {
+      "source": "opportunities",
+      "name": "Можливості здачі",
+      "type": "table",
+      "configure": "FILTER \"Стан\" = \"Майбутня\"; SHOW \"Назва\", \"Коли\", \"Предмет\", \"Підтвердження\", \"Група\"; SORT BY \"Коли\" ASC"
+    },
+    {
+      "source": "plans",
+      "name": "Поточний план",
+      "type": "gallery",
+      "configure": "FILTER \"Стан\" IN (\"Актуальний\", \"Потребує перегляду\") AND \"Тиждень\" <= \"today\" AND \"Кінець тижня\" >= \"today\"; SHOW \"Назва\", \"Тиждень\", \"Доступно год\", \"Стан\"; CARD SIZE small"
+    }
+  ]
+}

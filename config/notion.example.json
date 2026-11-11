@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "hub_url": null,
+  "settings_url": null,
+  "guide_url": null,
+  "data_sources": {"courses": null, "tasks": null, "opportunities": null, "plans": null}
+}

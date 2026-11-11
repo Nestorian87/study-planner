@@ -1,0 +1,242 @@
+{
+  "description": "Приклад дисциплін і лише невиконаних робіт. Не повний типовий навчальний план: виконані/готові роботи оригіналу виключено. Усі записи починають з До виконання, зусилля невідомі. Умови й кількість робіт іншого студента можуть відрізнятися.",
+  "courses": [
+    {
+      "key": "course-1",
+      "name": "Фізичне виховання та спорт"
+    },
+    {
+      "key": "course-2",
+      "name": "Мова програмування GoLang"
+    },
+    {
+      "key": "course-3",
+      "name": "Якість програмного забезпечення та тестування"
+    },
+    {
+      "key": "course-4",
+      "name": "Мультимедіа-системи"
+    },
+    {
+      "key": "course-5",
+      "name": "Корпоративні інформаційні системи"
+    },
+    {
+      "key": "course-6",
+      "name": "Штучний інтелект у програмній інженерії"
+    },
+    {
+      "key": "course-7",
+      "name": "Безпека програм та даних"
+    },
+    {
+      "key": "course-8",
+      "name": "Технологія блокчейн та машинне навчання"
+    }
+  ],
+  "tasks": [
+    {
+      "key": "work-1",
+      "course": "course-2",
+      "title": "ЛР3",
+      "type": "Лабораторна",
+      "format": "Групова"
+    },
+    {
+      "key": "work-2",
+      "course": "course-1",
+      "title": "Пройти тести на навчальній платформі",
+      "type": "Інше",
+      "format": "Індивідуальна"
+    },
+    {
+      "key": "work-3",
+      "course": "course-2",
+      "title": "ЛР2",
+      "type": "Лабораторна",
+      "format": "Групова"
+    },
+    {
+      "key": "work-4",
+      "course": "course-2",
+      "title": "ЛР4",
+      "type": "Лабораторна",
+      "format": "Групова"
+    },
+    {
+      "key": "work-5",
+      "course": "course-3",
+      "title": "ЛР4",
+      "type": "Лабораторна",
+      "format": "Групова"
+    },
+    {
+      "key": "work-6",
+      "course": "course-3",
+      "title": "ЛР5",
+      "type": "Лабораторна",
+      "format": "Групова"
+    },
+    {
+      "key": "work-7",
+      "course": "course-3",
+      "title": "ПЗ2",
+      "type": "Практична",
+      "format": "Індивідуальна"
+    },
+    {
+      "key": "work-8",
+      "course": "course-3",
+      "title": "ПЗ3",
+      "type": "Практична",
+      "format": "Індивідуальна"
+    },
+    {
+      "key": "work-9",
+      "course": "course-3",
+      "title": "ЛР1",
+      "type": "Лабораторна",
+      "format": "Групова"
+    },
+    {
+      "key": "work-10",
+      "course": "course-3",
+      "title": "ЛР2",
+      "type": "Лабораторна",
+      "format": "Групова"
+    },
+    {
+      "key": "work-11",
+      "course": "course-3",
+      "title": "ЛР3",
+      "type": "Лабораторна",
+      "format": "Групова"
+    },
+    {
+      "key": "work-12",
+      "course": "course-5",
+      "title": "ЛР2",
+      "type": "Лабораторна",
+      "format": "Групова"
+    },
+    {
+      "key": "work-13",
+      "course": "course-5",
+      "title": "ЛР3",
+      "type": "Лабораторна",
+      "format": "Групова"
+    },
+    {
+      "key": "work-14",
+      "course": "course-5",
+      "title": "ЛР1",
+      "type": "Лабораторна",
+      "format": "Групова"
+    },
+    {
+      "key": "work-15",
+      "course": "course-6",
+      "title": "ЛР4",
+      "type": "Лабораторна",
+      "format": "Групова"
+    },
+    {
+      "key": "work-16",
+      "course": "course-3",
+      "title": "ПЗ1",
+      "type": "Практична",
+      "format": "Індивідуальна"
+    },
+    {
+      "key": "work-17",
+      "course": "course-5",
+      "title": "ЛР4",
+      "type": "Лабораторна",
+      "format": "Групова"
+    },
+    {
+      "key": "work-18",
+      "course": "course-6",
+      "title": "ЛР3",
+      "type": "Лабораторна",
+      "format": "Групова"
+    },
+    {
+      "key": "work-19",
+      "course": "course-7",
+      "title": "ЛР4",
+      "type": "Лабораторна",
+      "format": "Індивідуальна"
+    },
+    {
+      "key": "work-20",
+      "course": "course-6",
+      "title": "ЛР1",
+      "type": "Лабораторна",
+      "format": "Групова"
+    },
+    {
+      "key": "work-21",
+      "course": "course-7",
+      "title": "ЛР5",
+      "type": "Лабораторна",
+      "format": "Індивідуальна"
+    },
+    {
+      "key": "work-22",
+      "course": "course-7",
+      "title": "ЛР2",
+      "type": "Лабораторна",
+      "format": "Індивідуальна"
+    },
+    {
+      "key": "work-23",
+      "course": "course-7",
+      "title": "ЛР3",
+      "type": "Лабораторна",
+      "format": "Індивідуальна"
+    },
+    {
+      "key": "work-24",
+      "course": "course-6",
+      "title": "ЛР2",
+      "type": "Лабораторна",
+      "format": "Групова"
+    },
+    {
+      "key": "work-25",
+      "course": "course-8",
+      "title": "ПЗ2",
+      "type": "Практична",
+      "format": "Індивідуальна"
+    },
+    {
+      "key": "work-26",
+      "course": "course-8",
+      "title": "ЛР3",
+      "type": "Лабораторна",
+      "format": "Групова"
+    },
+    {
+      "key": "work-27",
+      "course": "course-8",
+      "title": "ЛР2",
+      "type": "Лабораторна",
+      "format": "Групова"
+    },
+    {
+      "key": "work-28",
+      "course": "course-8",
+      "title": "ЛР4",
+      "type": "Лабораторна",
+      "format": "Групова"
+    },
+    {
+      "key": "work-29",
+      "course": "course-8",
+      "title": "ЛР1",
+      "type": "Лабораторна",
+      "format": "Групова"
+    }
+  ]
+}
